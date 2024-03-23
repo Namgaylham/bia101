@@ -1,20 +1,4 @@
-#objective:
-#create a program that take in user input
-#and determine if the number is positive or negative
- #print "yor number is positve " or "your number is neagtive"
- # if else
- #print()
- #input()
- # break down the problem 
- # take in the user input
- # check the type of input
- ### if the type is string how do you convert it ito integer
- # check if the number is psitive or negative or zero
- #need to use if else statement
- #you will be comparing numbers and not string 
- #print the result
-
- # Objective:
+# ! Objective:
 # ?Create a program that takes in user input
 # ?and determines if the number is positive or negative or zero
 # ?print: "Your number is positive" or "Your number is negative"
@@ -26,15 +10,17 @@
 # ! 3 mins
 # ! Break down the problem
 # ? 1. Take in user input
-# *Check the TYPE of the input 
-# *if the type is string, how do you convert it to an int/float?
+    # *Check the TYPE of the input 
+    # *if the type is string, how do you convert it to an int/float?
 # ?2. Check if the number is positive or negative or zero
-#*  need to use if else statement: 
-# ! a == b (is it equal to)
- # ! a != b (Not equal to) # ! a > b (is a greater than b) # ! a < b (is a less than b)
- # ! a >= b (is a greater than or equal to b)
- # ! a <= b (is a less than or equal to b)
-#* - you will be comparing numbers and not string
+    #*  need to use if else statement: 
+    # ! a == b (is it equal to)
+    # ! a != b (Not equal to)
+    # ! a > b (is a greater than b)
+    # ! a < b (is a less than b)
+    # ! a >= b (is a greater than or equal to b)
+    # ! a <= b (is a less than or equal to b)
+    #* - you will be comparing numbers and not string
 # ?3. Print the result
 
 # 1. Get user input
@@ -47,10 +33,10 @@ print('The type of userInputNumber is:', type(userInputNumber))
 
 # 2,3 - if else statement and print
 if userInputNumber > 0:
- print('The number is positive')
+    print('The number is positive')
 
 if userInputNumber < 0:
- print('The number is negative')
+    print('The number is negative')
 
 if userInputNumber == 0:
     print('The number is zero')
