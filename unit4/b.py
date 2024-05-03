@@ -13,3 +13,46 @@ for i in input_str: #! go through each character
 # print the final answer
 print('the final floor is', floor_index)
 
+#problem 2
+# scenario the alien only understand you
+#if the input is valid
+#given a set of open and close bracket
+#check to see if the input is valid
+#example 1
+#((()))
+#output: True
+#(()
+# output: False
+def is_valid_brackets(s):
+    stack = []
+    brackets_map = {')': '(', ']': '[', '}': '{'}
+
+    for char in s:
+        if char in brackets_map.values():  # If it's an open bracket
+            stack.append(char)
+        elif char in brackets_map:  # If it's a close bracket
+            if not stack or stack.pop() != brackets_map[char]:
+                return False  # Mismatch or stack is empty
+        else:
+            return False  # Invalid character
+
+    return len(stack) == 0  # True if stack is empty, False if there are unmatched open brackets
+
+# Test cases
+print(is_valid_brackets("((()))"))  # Output: True
+print(is_valid_brackets("(()"))     # Output: False
+
+
+
+input_str = ")))"
+stack = []
+for char in input_str:
+    if char == "(":
+        stack.append(char)
+    if char == ")":
+        stack.pop()
+length = len(stack)
+if length == 0:
+    print('True')
+else:
+    print("False")
