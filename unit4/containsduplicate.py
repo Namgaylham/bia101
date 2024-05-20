@@ -7,6 +7,7 @@ def containsDuplicate(nums):
             print('element:',element)
             print('i:', i)
             print('=========')
+            
 
 
     return True    
